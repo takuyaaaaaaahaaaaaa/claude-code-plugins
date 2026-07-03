@@ -1,0 +1,9 @@
+{
+  "name": "xcode-tools",
+  "version": "1.0.0",
+  "description": "Xcode MCP(xrun mcpbridge)経由でSwiftUI Previewをレンダリング・スクリーンショット取得するスキルと専用実行エージェント",
+  "author": {
+    "name": "takuyaaaaaaahaaaaaa"
+  },
+  "keywords": ["xcode", "swiftui", "preview", "ios", "mcp"]
+}

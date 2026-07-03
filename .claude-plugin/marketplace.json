@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/marketplace/marketplace.schema.json",
+  "name": "claude-code-plugins",
+  "owner": {
+    "name": "takuyaaaaaaahaaaaaa"
+  },
+  "metadata": {
+    "description": "takuyaaaaaaahaaaaaaが作成したClaude Code用スキル・エージェント集"
+  },
+  "plugins": [
+    {
+      "name": "xcode-tools",
+      "description": "Xcode MCP(xrun mcpbridge)経由でSwiftUI Previewをレンダリング・スクリーンショット取得するスキルと専用実行エージェント",
+      "source": "./xcode-tools",
+      "version": "1.0.0",
+      "category": "development",
+      "keywords": ["xcode", "swiftui", "preview", "ios", "mcp"],
+      "skills": ["./xcode-tools/skills/render-swiftui-preview"]
+    }
+  ]
+}
