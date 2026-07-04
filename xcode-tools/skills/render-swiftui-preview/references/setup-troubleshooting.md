@@ -23,8 +23,9 @@
 
 4. **Claude Code側にMCPサーバーが登録・接続されているか**
    ```bash
-   claude mcp list   # xcode: ✔ Connected か確認
+   claude mcp list | grep '^xcode:'
    ```
+   `xcode:` で始まる行だけを見て `✔ Connected` になっているか確認する。**`claude mcp list`の出力全体を目視するのは避ける** — `XcodeBuildMCP`など他のXcode関連MCPサーバーが同時に登録されていて`✘ Failed to connect`になっていることがあり、それを`xcode`自体の障害と誤読しやすい。行を絞ってから判定すること。
    未登録・未接続なら登録する:
    ```bash
    claude mcp add --transport stdio xcode -- xcrun mcpbridge -s user
